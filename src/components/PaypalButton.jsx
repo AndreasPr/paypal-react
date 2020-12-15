@@ -21,11 +21,18 @@ function PaypalButton(){
         },
         onApprove: async (data, actions) => {
           const order = await actions.order.capture();
+          alert("You have successfully completed the transaction.")
           console.log(order);
         },
         onError: (err) => {
           console.log(err);
         },
+        style: {
+          height: 40,
+          layout: 'vertical',
+          color: 'gold',
+          shape: 'pill'
+        }
       })
       .render(paypal.current);
   }, []);
