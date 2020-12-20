@@ -1,2 +1,2 @@
 # Paypal - React
-Paypal implementation using React
+Paypal implementation using ReactJS and the PayPal API
